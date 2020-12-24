@@ -48,8 +48,8 @@ module.exports = {
     const alt = args[1];
     const title = args[2];
     const className = args[3];
-    const lazy = args[4] ?? true;
-    const sizes = args[5] ?? defaultSizes;
+    const lazy = args[4] || true;
+    const sizes = args[5] || defaultSizes;
 
     const extension = path.extname(src).slice(1).toLowerCase();
     const fullSrc = isFullUrl(src) ? src : `./src/assets/images/${src}`;
@@ -84,8 +84,8 @@ module.exports = {
         class="${className ? `img-${className}` : ''}"
         loading="${lazy ? 'lazy' : 'eager'}"
         src="${fallback.url}"
-        width="${fallbackWidth ?? fallback.width}"
-        height="${fallbackHeight ?? fallback.height}" alt="${alt}">
+        width="${fallbackWidth || fallback.width}"
+        height="${fallbackHeight || fallback.height}" alt="${alt}">
     </picture>`;
     return title
       ? outdent({ newline: '' })`
