@@ -1,0 +1,41 @@
+.work {
+  @include listReset;
+
+  &__item {
+    position: relative;
+    padding: ($gtr) 0;
+    padding-left: rem(30);
+
+    &::before {
+      content: "\27BA";
+      position: absolute;
+      top: rem(14);
+      font-size: rem(24);
+      left: 0;
+      color: $peach;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      &::before {
+        color: $forest;
+        left: rem(3);
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__link-title {
+    font-weight: $fw-bold;
+    color: $forest;
+  }
+
+  &__link-divider {
+    // font-weight: 200;
+    color: $peach;
+  }
+}

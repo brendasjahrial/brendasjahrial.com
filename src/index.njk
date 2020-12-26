@@ -1,16 +1,21 @@
 ---
 layout: default
-htmlClass: html
-bodyClass: body
 ---
 
-<h2>Recent projects:</h2>
+<div class="intro">
+  <p>I'm Brenda, a strategist currently working at <a href="https://dnco.com/">dn&co</a>.</p>
 
-<ul>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<h4>Previous work</h4>
+
+<ul class="work">
   {%- for post in collections.work -%}
-  <li>
-    <a href="{{ post.url }}">
-      {{ post.data.title }}
+  <li class="work__item">
+    <a href="{{ post.url }}" class="work__link">
+      <span class="work__link-title">{{ post.data.title }}</span><span class="work__link-divider">. </span>
+      <span class="work__link-tagline">{{ post.data.tagline }}.</span>
     </a>
   </li>
   {%- endfor -%}

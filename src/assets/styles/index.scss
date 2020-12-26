@@ -1,27 +1,20 @@
-$blue: darkslateblue;
-$bg-body: antiquewhite;
+@import "base/normalize";
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace;
-}
+@import "utilities/font-face";
+@import "utilities/functions";
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/media-queries";
+@import "utilities/classes";
 
-body {
-  color: $blue;
-  background-color: $bg-body;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+@import "base/base";
+@import "base/typography";
 
-main {
-  flex-grow: 1;
-  text-align: center;
-}
+@import "atoms/btn";
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+@import "molecules/intro";
+@import "molecules/work";
+
+@import "organisms/header";
+@import "organisms/nav";
+@import "organisms/footer";

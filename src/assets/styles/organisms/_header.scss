@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  @include containerPadding;
+
+  &__name {
+
+  }
+
+  &__home-link {
+    @include linkUnderline(88%);
+  }
+}

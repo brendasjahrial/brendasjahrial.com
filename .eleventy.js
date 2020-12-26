@@ -64,7 +64,7 @@ module.exports = (config) => {
   });
 
   return {
-    dir: { input: 'src', output: '_site', includes: 'includes', data: 'data' },
+    dir: { input: 'src', output: '_site', includes: 'includes', layouts: 'layouts', data: 'data' },
     // Allow nunjucks, markdown and 11ty files to be processed
     templateFormats: ['njk', 'md', '11ty.js'],
     htmlTemplateEngine: 'njk',

@@ -1,0 +1,24 @@
+// Typography
+$ff: 'Fraunces', serif;
+$ff-default-settings: 'opsz' 40, 'SOFT' 50, 'WONK' 0;
+$ff-heading-settings: 'opsz' 100, 'SOFT' 85, 'WONK' 1;
+$fw-bold: 600;
+$fw-regular: 300;
+
+// Colors
+$black: #000A00;
+$daisy: #F9D27E;
+$peach: #F1945E;
+$violet: #8764F6;
+$forest: #315434;
+$white: #FFFFFF;
+
+// Sizes
+$nav-size  : rem(60);
+
+// Grid
+$gtr       : rem(15);
+$max-width : rem(800);
+
+// Borders
+$border: 1px solid $black;

@@ -1,0 +1,11 @@
+.intro {
+  max-width: $max-width;
+
+  p {
+    font-size: rem(30);
+  }
+
+  a {
+    @include linkUnderline;
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="{{ htmlClass }}" lang="{{ site.lang }}">
+<html lang="{{ site.lang }}">
   <head>
     <meta charset="utf-8">
     <title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title or site.name}}{% endif %}</title>
@@ -17,20 +17,15 @@
 
     <link rel="stylesheet" href="{% webpack 'main.css' %}">
   </head>
-  <body class="{{ bodyClass }}">
-    <header>
-      <h1>
-        <a href="/">Brenda Sjahrial</a>
-      </h1>
-    </header>
+  <body>
+    {% include 'header.njk' %}
 
     <main>
       {{ content | safe }}
     </main>
 
-    <footer>
-      <p>Updated on <time datetime="{{ build.timestamp | formatISO }}">{{ build.timestamp | format("dd LLL yyyy") }}</time></p>
-    </footer>
+    {% include 'footer.njk' %}
+
     <script async defer src="{% webpack 'main.js' %}"></script>
   </body>
 </html>
