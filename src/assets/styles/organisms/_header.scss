@@ -4,11 +4,7 @@
   align-items: baseline;
   @include containerPadding;
 
-  &__name {
-
-  }
-
   &__home-link {
-    @include linkUnderline(88%);
+    @include linkUnderline(90%);
   }
 }

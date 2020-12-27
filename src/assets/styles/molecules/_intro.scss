@@ -2,7 +2,11 @@
   max-width: $max-width-default;
 
   p {
-    font-size: rem(30);
+    font-size: rem(24);
+
+    @include media($m-screen-up) {
+      font-size: rem(30);
+    }
   }
 
   a {

@@ -16,8 +16,6 @@
   }
 
   &--full-width {
-    @include media($m-screen-up) {
-      margin-top: $gtr * 2;
-    }
+    margin-top: $gtr * 2;
   }
 }
