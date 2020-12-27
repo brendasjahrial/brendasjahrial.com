@@ -1,5 +1,6 @@
 .work {
   @include listReset;
+  max-width: $max-width-wide;
 
   &__item {
     position: relative;

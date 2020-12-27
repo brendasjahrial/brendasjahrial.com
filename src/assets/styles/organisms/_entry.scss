@@ -1,0 +1,34 @@
+.entry {
+  main {
+    background: $off-white;
+    padding-top: ($gtr * 2);
+    padding-bottom: ($gtr * 2);
+  }
+
+  &__container {
+    max-width: $max-width-wide;
+  }
+
+  &__header {
+    h3 { line-height: 1; }
+
+    p {
+      font-weight: $fw-bold;
+      color: $peach;
+    }
+  }
+
+  &__main {
+    picture {
+      display: block;
+      clear: both;
+      margin-bottom: $gtr * 2;
+    }
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}

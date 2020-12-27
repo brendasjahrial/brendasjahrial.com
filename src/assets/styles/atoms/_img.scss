@@ -1,0 +1,23 @@
+.img {
+  &--float-right {
+    @include media($m-screen-up) {
+      width: 50%;
+      float: right;
+      margin-left: $gtr * 2;
+    }
+  }
+
+  &--float-left {
+    @include media($m-screen-up) {
+      width: 50%;
+      float: left;
+      margin-right: $gtr * 2;
+    }
+  }
+
+  &--full-width {
+    @include media($m-screen-up) {
+      margin-top: $gtr * 2;
+    }
+  }
+}

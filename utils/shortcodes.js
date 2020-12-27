@@ -38,18 +38,11 @@ module.exports = {
   // {% image "image.jpeg", "Image alt", "Image title", "my-class" %}
   // {% image [100,100], "image.jpeg", "Image alt", "Image title", "my-class" %}
   image: async (...args) => {
-    let fallbackWidth, fallbackHeight;
-
-    if (Array.isArray(args[0])) {
-      [fallbackWidth, fallbackHeight] = args.shift();
-    }
-
     const src = args[0];
     const alt = args[1];
-    const title = args[2];
-    const className = args[3];
-    const lazy = args[4] || true;
-    const sizes = args[5] || defaultSizes;
+    const className = args[2];
+    const lazy = args[3] || true;
+    const sizes = args[4] || defaultSizes;
 
     const extension = path.extname(src).slice(1).toLowerCase();
     const fullSrc = isFullUrl(src) ? src : `./src/assets/images/${src}`;
@@ -71,7 +64,7 @@ module.exports = {
 
     const fallback = stats[extension].reverse()[0];
     const picture = outdent({ newline: '' })`
-    <picture>
+    <picture class="${className ? `img--${className}` : ''}">
       ${Object.values(stats)
         .map(
           (image) =>
@@ -81,18 +74,12 @@ module.exports = {
         )
         .join('')}
       <img
-        class="${className ? `img-${className}` : ''}"
         loading="${lazy ? 'lazy' : 'eager'}"
         src="${fallback.url}"
-        width="${fallbackWidth || fallback.width}"
-        height="${fallbackHeight || fallback.height}" alt="${alt}">
+        width="${fallback.width}"
+        height="${fallback.height}"
+        alt="${alt}">
     </picture>`;
-    return title
-      ? outdent({ newline: '' })`
-      <figure class="${className ? `fig-${className}` : ''}"
-        ${picture}
-        <figcaption>${markdown.renderInline(title)}</figcaption>
-      </figure>`
-      : picture;
+    return picture;
   }
 };

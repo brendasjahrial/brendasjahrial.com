@@ -11,14 +11,10 @@ $daisy: #F9D27E;
 $peach: #F1945E;
 $violet: #8764F6;
 $forest: #315434;
+$off-white: #F9F2E6;
 $white: #FFFFFF;
-
-// Sizes
-$nav-size  : rem(60);
 
 // Grid
 $gtr       : rem(15);
-$max-width : rem(800);
-
-// Borders
-$border: 1px solid $black;
+$max-width-default : rem(800);
+$max-width-wide : rem(1140);

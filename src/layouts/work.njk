@@ -1,8 +1,15 @@
 ---
 layout: default
+bodyClass: entry
 ---
 
-<h3>{{ title }}</h3>
-<p>&mdash; {{ type }}</p>
+<div class="entry__container">
+  <header class="entry__header">
+    <h3>{{ title }}</h3>
+    <p>{{ type }}</p>
+  </header>
 
-{{ content | safe }}
+  <div class="entry__main">
+    {{ content | safe }}
+  </div>
+</div>
