@@ -1,9 +1,11 @@
 .img {
+  margin-top: $gtr * 3;
+
   &--float-right {
     @include media($m-screen-up) {
       width: 50%;
       float: right;
-      margin-left: $gtr * 2;
+      margin: ($gtr * 4) 0 ($gtr * 4) ($gtr * 3);
     }
   }
 
@@ -11,11 +13,7 @@
     @include media($m-screen-up) {
       width: 50%;
       float: left;
-      margin-right: $gtr * 2;
+      margin: ($gtr * 4) ($gtr * 3) ($gtr * 4) 0;
     }
-  }
-
-  &--full-width {
-    margin-top: $gtr * 2;
   }
 }

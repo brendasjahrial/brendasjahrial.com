@@ -15,11 +15,11 @@ The existing aid system is slow, inefficient and no longer fit for purpose.
 
 {% image "start-network-logo.jpg", "Start Network logo", "full-width" %}
 
-{% image "start-network-report.jpg", "Start Network report cover", "float-right" %}
+{% image "start-network-report.jpg", "Start Network report cover", "float-right" %} 
 
 #### The insight 
 
-The Start Network is made up of 42 aid agencies working together to create a more efficient way to deliver aid. While its members recognise the need for change, they felt increasingly uninspired by the slow decision-making process and bureaucracy that plagues the charity sector. They needed the Start Network to motivate and guide them in the right direction.
+The Start Network is made up of 42 aid agencies working together to create a more efficient way to deliver aid. While its members recognise the need for change, they felt increasingly uninspired by the slow decision-making process and bureaucracy that plagues the charity sector. They needed the Start Network to motivate and guide them in the right direction. 
 
 {% image "start-network-graphic-2.jpg", "Start Network graphic language", "full-width" %}
 
@@ -27,4 +27,4 @@ The Start Network is made up of 42 aid agencies working together to create a mor
 
 #### The strategy 
 
-We positioned Start Network as a challenger, one that brought new thinking to the table and constantly challenged the status quo. Think Alexandria Ocasio-Cortez in a room full of middle-aged politicians. The identity avoided the usual charity tropes, instead opting for vibrant colours and a bold strikethrough treatment that signalled a new era of humanitarian aid.
+We positioned Start Network as a challenger, one that brought new thinking to the table and constantly challenged the status quo. Think Alexandria Ocasio-Cortez in a room full of middle-aged politicians. The identity avoided the usual charity tropes, instead opting for vibrant colours and a bold strikethrough treatment that signalled a new era of humanitarian aid. 

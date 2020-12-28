@@ -64,22 +64,24 @@ module.exports = {
 
     const fallback = stats[extension].reverse()[0];
     const picture = outdent({ newline: '' })`
-    <picture class="${className ? `img--${className}` : ''}">
-      ${Object.values(stats)
-        .map(
-          (image) =>
-            `<source type="image/${image[0].format}" srcset="${image
-              .map((entry) => `${entry.url} ${entry.width}w`)
-              .join(', ')}" sizes="${sizes}">`
-        )
-        .join('')}
-      <img
-        loading="${lazy ? 'lazy' : 'eager'}"
-        src="${fallback.url}"
-        width="${fallback.width}"
-        height="${fallback.height}"
-        alt="${alt}">
-    </picture>`;
+    <div class="img${className ? ` img--${className}` : ''}">
+      <picture>
+        ${Object.values(stats)
+          .map(
+            (image) =>
+              `<source type="image/${image[0].format}" srcset="${image
+                .map((entry) => `${entry.url} ${entry.width}w`)
+                .join(', ')}" sizes="${sizes}">`
+          )
+          .join('')}
+        <img
+          loading="${lazy ? 'lazy' : 'eager'}"
+          src="${fallback.url}"
+          width="${fallback.width}"
+          height="${fallback.height}"
+          alt="${alt}">
+      </picture>
+    </div>`;
     return picture;
   }
 };
