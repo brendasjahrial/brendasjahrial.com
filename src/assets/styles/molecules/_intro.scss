@@ -1,6 +1,6 @@
 .intro {
   max-width: $max-width-wide;
-  margin-bottom: $gtr * 2;
+  margin-bottom: $gtr * 6;
 
   p {
     font-variation-settings: 'opsz' 140, 'SOFT' 85, 'WONK' 0;
@@ -14,5 +14,9 @@
 
   a {
     @include linkUnderline;
+  }
+
+  &__extra {
+    display: none;
   }
 }

@@ -1,5 +1,6 @@
 .footer {
   font-size: rem(16);
+  padding-top: $gtr;
   @include containerPadding;
 
   @include media($m-screen-up) {

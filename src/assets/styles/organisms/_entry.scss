@@ -10,6 +10,8 @@
   }
 
   &__header {
+    margin: ($gtr * 2) 0;
+
     h3 { line-height: 1; }
 
     p {

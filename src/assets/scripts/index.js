@@ -1,1 +1,3 @@
-console.log('Hello world');
+import preview from './modules/preview';
+
+preview();

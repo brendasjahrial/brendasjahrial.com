@@ -1,0 +1,15 @@
+.divider {
+  display: inline-block;
+  font-size: rem(40);
+  color: $peach;
+  animation: spin 3s infinite alternate ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

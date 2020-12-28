@@ -1,42 +1,89 @@
 .work {
-  @include listReset;
-  max-width: $max-width-wide;
+  &__header {
+    font-size: rem(30);
+    margin-bottom: $gtr;
+  }
+
+  &__list {
+    @include listReset;
+    max-width: $max-width-wide;
+  }
 
   &__item {
     position: relative;
-    padding: ($gtr) 0;
-    padding-left: rem(30);
+    border-bottom: 2px solid $forest;
+
+    &:first-child {
+      border-top: 2px solid $forest;
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    padding: ($gtr * 3) 0;
+    padding-left: rem(60);
+    text-decoration: none;
 
     &::before {
       content: "\27BA";
       position: absolute;
-      top: rem(14);
-      font-size: rem(24);
+      top: rem(40);
+      font-size: rem(50);
       left: 0;
       color: $peach;
       transition: all 0.2s ease-in-out;
     }
 
     &:hover {
+      .work__link-text,
+      .work__link-divider {
+        font-weight: 700;
+        font-variation-settings: 'opsz' 90, 'SOFT' 85, 'WONK' 1;
+      }
       &::before {
         color: $forest;
-        left: rem(3);
+        // left: rem(3);
       }
     }
   }
 
-  &__link {
-    display: block;
-    text-decoration: none;
+  &__link-title {
+    font-variation-settings: $ff-heading-settings;
+    font-size: rem(60);
+    line-height: 1;
   }
 
-  &__link-title {
+  &__link-text {
     font-weight: $fw-bold;
     color: $forest;
+    transition: all 0.4s ease-out;
+
   }
 
   &__link-divider {
-    // font-weight: 200;
     color: $peach;
+    transition: all 0.2s ease-out;
+  }
+
+  &__link-tagline {
+    display: block;
+  }
+
+  &__preview {
+    visibility: hidden;
+    width: rem(400);
+    position: absolute;
+    right: $gtr * 2;
+    bottom: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s, transform 0.7s ease-out;
+
+    &.is-active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-$gtr * 2);
+    }
   }
 }

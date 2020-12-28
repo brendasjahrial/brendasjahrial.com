@@ -1,9 +1,0 @@
-.nav {
-  &__link {
-    color: $forest;
-    font-size: rem(22);
-    font-weight: $fw-bold;
-    font-variation-settings: $ff-heading-settings;
-    @include linkUnderline;
-  }
-}
