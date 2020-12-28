@@ -32,7 +32,7 @@
     linear-gradient($forest, $forest);
   background-size: 100% 2px, 0 2px;
   background-position: right #{$bottom}, left #{$bottom};
-  transition: all 0.2s ease-in;
+  transition: background 0.2s ease-in;
 
   &:hover {
     background-size: 0% 2px, 100% 2px;

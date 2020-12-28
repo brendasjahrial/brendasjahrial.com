@@ -42,7 +42,7 @@
       font-size: rem(28);
       left: 0;
       color: $peach;
-      transition: all 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
 
       @include media($m-screen-up) {
         top: rem(40);
@@ -75,12 +75,12 @@
   &__link-text {
     font-weight: $fw-bold;
     color: $forest;
-    transition: all 0.4s ease-out;
+    transition: font-weight 0.4s ease-out;
   }
 
   &__link-divider {
     color: $peach;
-    transition: all 0.2s ease-out;
+    transition: font-weight 0.2s ease-out;
   }
 
   &__link-tagline {
