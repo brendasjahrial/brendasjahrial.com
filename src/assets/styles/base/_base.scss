@@ -22,8 +22,12 @@ body {
 }
 
 main {
-  margin: ($gtr * 2) 0;
+  margin: $gtr 0;
   @include containerPadding;
+
+  @include media($m-screen-up) {
+    margin: ($gtr * 2) 0;
+  }
 }
 
 a {

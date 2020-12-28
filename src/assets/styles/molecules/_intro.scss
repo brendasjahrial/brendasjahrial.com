@@ -1,10 +1,14 @@
 .intro {
   max-width: $max-width-wide;
-  margin-bottom: $gtr * 6;
+  margin-bottom: $gtr * 2;
+
+  @include media($m-screen-up) {
+    margin-bottom: $gtr * 6;
+  }
 
   p {
     font-variation-settings: 'opsz' 140, 'SOFT' 85, 'WONK' 0;
-    font-size: rem(30);
+    font-size: rem(28);
 
     @include media($m-screen-up) {
       font-size: rem(60);

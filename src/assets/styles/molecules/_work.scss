@@ -1,7 +1,12 @@
 .work {
   &__header {
-    font-size: rem(30);
-    margin-bottom: $gtr;
+    font-size: rem(24);
+    margin-bottom: $gtr / 2;
+
+    @include media($m-screen-up) {
+      font-size: rem(30);
+      margin-bottom: $gtr;
+    }
   }
 
   &__list {
@@ -21,18 +26,28 @@
   &__link {
     display: block;
     position: relative;
-    padding: ($gtr * 3) 0;
-    padding-left: rem(60);
+    padding: ($gtr * 1.5) 0;
+    padding-left: rem(30);
     text-decoration: none;
+
+    @include media($m-screen-up) {
+      padding: ($gtr * 3) 0;
+      padding-left: rem(60);
+    }
 
     &::before {
       content: "\27BA";
       position: absolute;
-      top: rem(40);
-      font-size: rem(50);
+      top: rem(20);
+      font-size: rem(28);
       left: 0;
       color: $peach;
       transition: all 0.2s ease-in-out;
+
+      @include media($m-screen-up) {
+        top: rem(40);
+        font-size: rem(50);
+      }
     }
 
     &:hover {
@@ -43,22 +58,24 @@
       }
       &::before {
         color: $forest;
-        // left: rem(3);
       }
     }
   }
 
   &__link-title {
     font-variation-settings: $ff-heading-settings;
-    font-size: rem(60);
+    font-size: rem(32);
     line-height: 1;
+
+    @include media($m-screen-up) {
+      font-size: rem(60);
+    }
   }
 
   &__link-text {
     font-weight: $fw-bold;
     color: $forest;
     transition: all 0.4s ease-out;
-
   }
 
   &__link-divider {
@@ -68,9 +85,15 @@
 
   &__link-tagline {
     display: block;
+    font-size: rem(18);
+
+    @include media($m-screen-up) {
+      font-size: inherit;
+    }
   }
 
   &__preview {
+    display: none;
     visibility: hidden;
     width: rem(400);
     position: absolute;
@@ -79,6 +102,10 @@
     pointer-events: none;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s, transform 0.7s ease-out;
+
+    @include media($m-screen-up) {
+      display: block;
+    }
 
     &.is-active {
       visibility: visible;

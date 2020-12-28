@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: rem(40);
+  font-size: rem(36);
 
   @include media($m-screen-up) {
     font-size: rem(75);
@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-size: rem(34);
+  font-size: rem(32);
 
   @include media($m-screen-up) {
     font-size: rem(60);
