@@ -1,9 +1,16 @@
+$offset-small: ($gtr * 3.5) + (rem(36) * 1.4) + (rem(24) * 1.4);
+$offset-large: ($gtr * 5) + (rem(75) * 1.4) + (rem(60) * 1.4);
+
 .intro {
   max-width: $max-width-wide;
-  margin-bottom: $gtr * 2;
+  min-height: rem(150);
+  height: calc(100vh - #{$offset-small});
+  height: calc(var(--vh) - #{$offset-small});
 
   @include media($m-screen-up) {
-    margin-bottom: $gtr * 6;
+    min-height: rem(300);
+    height: calc(100vh - #{$offset-large});
+    height: calc(var(--vh) - #{$offset-large});
   }
 
   p {
