@@ -25,7 +25,7 @@ layout: default
           </span>
           <span class="work__link-tagline">{{ post.data.tagline }}.</span>
         </a>
-        <img src="/assets/static/{{ post.data.image }}" alt="" class="work__preview">
+        {% image post.data.image, "Start Network report cover", "work__preview", true, "25rem" %}
       </li>
       {%- endfor -%}
     </ul>

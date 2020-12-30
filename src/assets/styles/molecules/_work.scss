@@ -92,16 +92,22 @@
     }
   }
 
-  &__preview {
+  .img--work__preview {
     display: none;
     visibility: hidden;
+    margin-top: 0;
     width: rem(400);
     position: absolute;
     right: $gtr * 2;
     bottom: 0;
     pointer-events: none;
     opacity: 0;
+    box-shadow: 0 0 16px 3px rgba($forest, 0.2);
     transition: visibility 0s, opacity 0.5s, transform 0.7s ease-out;
+
+    picture, img {
+      display: block;
+    }
 
     @include media($m-screen-up) {
       display: block;
