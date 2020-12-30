@@ -15,6 +15,11 @@
     <meta property="og:site_name" content="{{ name or site.name }}" />
     <meta property="og:description" content="{{ description or site.description }}" />
 
+    {# Based on https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs #}
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/assets/static/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/static/apple-touch-icon.png">
+
     <link rel="stylesheet" href="{% webpack 'main.css' %}">
   </head>
   <body class="{{ bodyClass }}">

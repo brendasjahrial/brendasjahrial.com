@@ -40,6 +40,7 @@ module.exports = (config) => {
 
   // Pass-through files
   config.addPassthroughCopy('src/favicon.ico');
+  config.addPassthroughCopy('src/manifest.webmanifest');
   // Everything inside static is copied verbatim to `_site`
   config.addPassthroughCopy('src/assets/static');
 
