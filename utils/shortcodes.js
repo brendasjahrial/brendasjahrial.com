@@ -5,7 +5,7 @@ const Image = require('@11ty/eleventy-img');
 const markdown = require('./markdown');
 
 const iconDefaultSize = 24;
-const defaultSizes = '90vw';
+const defaultSizes = '100vw';
 const defaultImagesSizes = [1920, 1280, 640, 320];
 
 const isFullUrl = (url) => {
