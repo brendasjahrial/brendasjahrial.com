@@ -15,7 +15,7 @@ function initEventListeners() {
     linksArray.forEach(link => {
       link.addEventListener('mouseenter', mouseHandler);
       link.addEventListener('mouseleave', mouseHandler);
-    })
+    });
   }
 }
 

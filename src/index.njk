@@ -2,30 +2,32 @@
 layout: default
 ---
 
-<section class="intro">
-  <p>
-    Hello, I’m Brenda, a strategist based in London. Currently working at <a href="https://dnco.com/">dn&co</a> on place-branding. Previously at <a href="https://niceandserious.com">Nice and Serious</a>.
-  </p>
-  <div class="intro__extra">
-    <p>I grew up in Jakarta and Singapore, before coming to London to study advertising at UAL. Since my degree, I’ve worked on campaigns and brand strategies for innocent, Nando’s, Macmillan and WWF.</p>
-    <p>I love researching and getting immersed in different worlds, finding new ways of looking at things and turning them into compelling stories.</p>
-  </div>
-</section>
+<div id="js-ajax-content">
+  <section class="intro">
+    <p>
+      Hello, I’m Brenda, a strategist based in London. Currently working at <a href="https://dnco.com/">dn&co</a> on place-branding. Previously at <a href="https://niceandserious.com">Nice and Serious</a>.
+    </p>
+    <div class="intro__extra">
+      <p>I grew up in Jakarta and Singapore, before coming to London to study advertising at UAL. Since my degree, I’ve worked on campaigns and brand strategies for innocent, Nando’s, Macmillan and WWF.</p>
+      <p>I love researching and getting immersed in different worlds, finding new ways of looking at things and turning them into compelling stories.</p>
+    </div>
+  </section>
 
-<section class="work">
-  <h2 class="work__header">Selected work</h2>
+  <section class="work">
+    <h2 class="work__header">Selected work</h2>
 
-  <ul class="work__list">
-    {%- for post in collections.work -%}
-    <li class="work__item">
-      <a href="{{ post.url }}" class="work__link js-work-link">
-        <span class="work__link-title">
-          <span class="work__link-text">{{ post.data.title }}</span><span class="work__link-divider">. </span>
-        </span>
-        <span class="work__link-tagline">{{ post.data.tagline }}.</span>
-      </a>
-      <img src="/assets/static/{{ post.data.image }}" alt="" class="work__preview">
-    </li>
-    {%- endfor -%}
-  </ul>
-</section>
+    <ul class="work__list">
+      {%- for post in collections.work -%}
+      <li class="work__item">
+        <a href="{{ post.url }}" class="work__link js-work-link js-ajax-link">
+          <span class="work__link-title">
+            <span class="work__link-text">{{ post.data.title }}</span><span class="work__link-divider">. </span>
+          </span>
+          <span class="work__link-tagline">{{ post.data.tagline }}.</span>
+        </a>
+        <img src="/assets/static/{{ post.data.image }}" alt="" class="work__preview">
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+</div>

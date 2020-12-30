@@ -7,6 +7,11 @@
   @include media($m-screen-up) {
     font-size: rem(40);
   }
+
+  &--loader {
+    // color: $daisy;
+    font-size: rem(80);
+  }
 }
 
 @keyframes spin {
