@@ -1,6 +1,5 @@
 import axios from 'axios';
 import gsap from 'gsap';
-import preview from './preview';
 
 let hideContent, delay, request;
 const container = document.querySelector('#js-ajax-container');
@@ -76,9 +75,6 @@ function processAjax(response, url, isPopState) {
         // ease: "power2.in"
       }, 'fade')
       .set(loader, { display: 'none' });
-
-    // Initial preview module
-    preview();
 
     // If the new page has a class on the body element
     // Make sure it gets set here.
