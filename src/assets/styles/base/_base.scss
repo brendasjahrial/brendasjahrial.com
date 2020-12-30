@@ -25,6 +25,11 @@ body {
 }
 
 main {
+  .js & {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
   margin: $gtr 0;
   @include containerPadding;
 

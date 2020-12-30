@@ -64,15 +64,16 @@ function processAjax(response, url, isPopState) {
     gsap.timeline()
       .add('fade')
       .fromTo(content, {
-        opacity: 0
+        opacity: 0,
+        y: 20
       }, {
         opacity: 1,
+        y: 0,
         duration: 0.3
       }, 'fade')
       .to(loader, {
         opacity: 0,
         duration: 0.3,
-        // ease: "power2.in"
       }, 'fade')
       .set(loader, { display: 'none' });
 

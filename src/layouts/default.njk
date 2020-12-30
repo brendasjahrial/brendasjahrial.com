@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ site.lang }}" class="no-js" >
   <head>
     <meta charset="utf-8">
     <title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title or site.name}}{% endif %}</title>
@@ -19,6 +19,12 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="icon" href="/assets/static/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/static/apple-touch-icon.png">
+
+    <script>
+      var root = document.documentElement;
+      root.classList.remove('no-js');
+      root.classList.add('js');
+    </script>
 
     <link rel="stylesheet" href="{% webpack 'main.css' %}">
   </head>

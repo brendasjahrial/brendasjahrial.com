@@ -1,4 +1,6 @@
 .footer {
+  .js & { opacity: 0; }
+
   font-size: rem(16);
   padding-top: $gtr;
   @include containerPadding;
