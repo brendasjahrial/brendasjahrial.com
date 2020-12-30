@@ -3,9 +3,11 @@ tags: work
 layout: work
 date: 2020-12-01
 title: Start Network
-tagline: Positively disrupting the humanitarian aid system
+description: Positively disrupting the humanitarian aid system
 type: Brand strategy
-image: start-network-logo.jpg
+hoverImage: start-network-logo.jpg
+image: share-image.png
+
 ---
 
 Around the world, crises are lasting longer and affecting more people. 

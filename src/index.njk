@@ -19,9 +19,9 @@ layout: default
           <span class="work__link-title">
             <span class="work__link-text">{{ post.data.title }}</span><span class="work__link-divider">. </span>
           </span>
-          <span class="work__link-tagline">{{ post.data.tagline }}.</span>
+          <span class="work__link-tagline">{{ post.data.description }}.</span>
         </a>
-        {% image post.data.image, "Start Network report cover", "work__preview", true, "25rem" %}
+        {% image post.data.hoverImage, "Start Network report cover", "work__preview", true, "25rem" %}
       </li>
       {%- endfor -%}
     </ul>
