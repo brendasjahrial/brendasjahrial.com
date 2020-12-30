@@ -14,10 +14,11 @@
 @import "atoms/divider";
 @import "atoms/loader";
 
+@import "molecules/masthead";
 @import "molecules/intro";
-@import "molecules/about";
 
 @import "organisms/header";
 @import "organisms/entry";
 @import "organisms/work";
+@import "organisms/about";
 @import "organisms/footer";

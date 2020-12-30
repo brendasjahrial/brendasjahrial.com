@@ -14,18 +14,4 @@ $offset-large: ($gtr * 5) + (rem(75) * 1.4) + (rem(60) * 1.4);
     min-height: rem(300);
     height: calc(var(--vh) - #{$offset-large});
   }
-
-  p {
-    font-variation-settings: 'opsz' 140, 'SOFT' 85, 'WONK' 0;
-    font-size: rem(28);
-
-    @include media($m-screen-up) {
-      font-size: rem(60);
-      line-height: 1.2;
-    }
-  }
-
-  a {
-    @include linkUnderline;
-  }
 }
