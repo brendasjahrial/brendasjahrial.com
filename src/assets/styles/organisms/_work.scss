@@ -67,8 +67,15 @@
         font-weight: 700;
         font-variation-settings: 'opsz' 90, 'SOFT' 85, 'WONK' 1;
       }
+
       &::before {
         color: $forest;
+      }
+
+      & + .img {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(-$gtr * 2);
       }
     }
   }
@@ -127,12 +134,6 @@
     @include media($l-screen-up) {
       bottom: 30%;
       right: $gtr * 2;
-    }
-
-    &.is-active {
-      visibility: visible;
-      opacity: 1;
-      transform: translateY(-$gtr * 2);
     }
   }
 }
