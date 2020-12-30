@@ -98,8 +98,6 @@
     margin-top: 0;
     width: rem(400);
     position: absolute;
-    right: $gtr * 2;
-    bottom: 0;
     pointer-events: none;
     opacity: 0;
     box-shadow: 0 0 16px 3px rgba($forest, 0.2);
@@ -111,6 +109,13 @@
 
     @include media($m-screen-up) {
       display: block;
+      bottom: 60%;
+      right: 0;
+    }
+
+    @include media($l-screen-up) {
+      bottom: 30%;
+      right: $gtr * 2;
     }
 
     &.is-active {
