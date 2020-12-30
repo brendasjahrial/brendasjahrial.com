@@ -9,8 +9,15 @@
   }
 
   &--loader {
-    // color: $daisy;
     font-size: rem(80);
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $forest;
+    }
   }
 }
 

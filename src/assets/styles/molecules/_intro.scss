@@ -26,8 +26,4 @@ $offset-large: ($gtr * 5) + (rem(75) * 1.4) + (rem(60) * 1.4);
   a {
     @include linkUnderline;
   }
-
-  &__extra {
-    display: none;
-  }
 }
