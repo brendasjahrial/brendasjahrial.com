@@ -1,5 +1,8 @@
 .work {
+  max-width: $max-width-wide;
+
   &__header {
+    position: relative;
     font-size: rem(24);
     margin-bottom: $gtr / 2;
 
@@ -7,11 +10,19 @@
       font-size: rem(30);
       margin-bottom: $gtr;
     }
+
+    &::after {
+      content: '\27BA';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      color: $peach;
+      transform: rotate(90deg);
+    }
   }
 
   &__list {
     @include listReset;
-    max-width: $max-width-wide;
   }
 
   &__item {
