@@ -9,7 +9,7 @@ image: share-image.png
 
 ---
 
-Most people know them for peri-peri and chips. But less know the fact that they were the first restaurant group in Europe to have an approved Science Based Target. NandoAs a brand and business, they've always stood for more than just chicken and chips.
+Most people know them for peri-peri and chips. But Nando's have ambitions to be a force for good. Not only are they the first restaurant group in Europe to have an approved Science Based Target, but they also 
 
 **The brief was to develop a sustainability-focused content strategy for Nando's. How does a fast food brand establish itself as a force for good?**
 

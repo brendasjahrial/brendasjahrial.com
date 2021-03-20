@@ -4,7 +4,7 @@ layout: work
 date: 2020-12-04
 title: Breast Cancer Now
 description: Bringing awareness and urgency to breast cancer care 
-hoverImage: refugee-action-logo.png
+hoverImage: bcn-secondary-website.jpg
 image: share-image.png
 
 ---
@@ -25,7 +25,7 @@ We needed to reflect the realities of secondary breast cancer by creating an alt
 
 {% image "bcn-secondary-website.jpg", "Breast Cancer Now campaign website", "full-width" %}
 
-{% image "bcn report.jpg", "Breast Cancer Now report covers", "float-left" %}
+{% image "bcn-report-cover.jpg", "Breast Cancer Now report covers", "float-left" %}
 
 #### The strategy 
 
