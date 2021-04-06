@@ -1,6 +1,7 @@
 .entry {
   main {
     background: $off-white;
+    color: $black;
     padding-top: $gtr;
     padding-bottom: ($gtr * 2);
 
@@ -24,7 +25,7 @@
 
     p {
       font-weight: $fw-bold;
-      color: $peach;
+      color: $secondary;
     }
   }
 

@@ -1,7 +1,7 @@
 .divider {
   display: inline-block;
   font-size: rem(30);
-  color: $peach;
+  color: $secondary;
   animation: spin 3s infinite alternate ease-in-out;
 
   @include media($m-screen-up) {
@@ -16,7 +16,7 @@
     text-decoration: none;
 
     &:hover {
-      color: $forest;
+      color: $white;
     }
   }
 }

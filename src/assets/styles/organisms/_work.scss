@@ -16,7 +16,7 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      color: $peach;
+      color: $secondary;
       transform: rotate(90deg);
     }
   }
@@ -27,10 +27,10 @@
 
   &__item {
     position: relative;
-    border-bottom: 2px solid $forest;
+    border-bottom: 2px solid $white;
 
     &:first-child {
-      border-top: 2px solid $forest;
+      border-top: 2px solid $white;
     }
   }
 
@@ -52,7 +52,7 @@
       top: rem(20);
       font-size: rem(28);
       left: 0;
-      color: $peach;
+      color: $secondary;
       transition: color 0.2s ease-in-out;
 
       @include media($m-screen-up) {
@@ -69,7 +69,7 @@
       }
 
       &::before {
-        color: $forest;
+        color: $white;
       }
 
       & + .img {
@@ -92,12 +92,12 @@
 
   &__link-text {
     font-weight: $fw-bold;
-    color: $forest;
+    color: $white;
     transition: font-weight 0.4s ease-out;
   }
 
   &__link-divider {
-    color: $peach;
+    color: $secondary;
     transition: font-weight 0.2s ease-out;
   }
 
@@ -118,7 +118,7 @@
     position: absolute;
     pointer-events: none;
     opacity: 0;
-    box-shadow: 0 0 16px 3px rgba($forest, 0.2);
+    box-shadow: 0 0 16px 3px rgba($white, 0.2);
     transition: visibility 0s, opacity 0.5s, transform 0.7s ease-out;
 
     picture, img {
